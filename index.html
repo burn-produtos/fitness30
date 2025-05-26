@@ -26,8 +26,9 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- CDN do Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
   <!-- Fonte Lora -->
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
@@ -86,7 +87,7 @@
   <!-- Vídeo de fundo -->
   <div class="video-bg-container">
     <video id="bgVideo" autoplay muted playsinline>
-      <source src="video-fundo.webm" type="video/webm">
+      <source src="novo-video-fundo.webm" type="video/webm">
       Seu navegador não suporta vídeo.
     </video>
   </div>
@@ -111,6 +112,7 @@
   </div>
 
   <script>
+    // Quando o vídeo terminar, congela no último frame
     const bgVideo = document.getElementById('bgVideo');
     bgVideo.addEventListener('ended', () => {
       bgVideo.currentTime = bgVideo.duration - 0.1;
